@@ -1,0 +1,600 @@
+body {
+    font-family: 'Aleo', serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Truque para travar a imagem de fundo no celular */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Garante que a imagem fique atrás de todo o conteúdo */
+}
+
+/* Estilo base para todas as telas */
+.screen {
+    width: 100%;
+    max-width: 800px; /* Largura máxima para o conteúdo da tela */
+    /* Ajuste o padding para criar a margem lateral */
+    padding: 30px; /* Padding vertical */
+    padding-left: 50px; /* Margem esquerda de 50px */
+    padding-right: 50px; /* Margem direita de 50px */
+    box-sizing: border-box;
+    text-align: left; /* Alinha o conteúdo da tela à esquerda por padrão */
+    margin-top: 0; /* Remove o margin-top, pois o align-items: center do body já centraliza */
+
+    background-color: transparent; /* Garante que não haja fundo */
+    box-shadow: none; /* Garante que não haja sombra */
+    border-radius: 0; /* Garante que não haja borda arredondada */
+
+    /* Transição de opacidade para as telas, exceto a de introdução */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Sobrescreve o estilo do "card branco" APENAS para a tela de introdução */
+#intro-section {
+    padding: 20px; /* Ajusta o padding para a introdução, se necessário */
+    padding-left: 50px; /* Margem esquerda de 50px para a introdução */
+    padding-right: 50px; /* Margem direita de 50px para a introdução */
+}
+
+.hidden {
+    display: none !important; /* Usa !important para garantir que sobrescreva qualquer display */
+    opacity: 0;
+}
+
+/* Estilo para o logo */
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o logo */
+}
+
+.logo {
+    max-width: 200px; /* Ajuste conforme o tamanho do seu logo */
+    height: auto;
+}
+
+/* Estilo geral para h1 */
+h1 {
+    color: #5d2066;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    text-align: center; /* Alinha o h1 à esquerda por padrão */
+}
+
+/* Sobrescreve o estilo do h1 para as telas de pergunta (nome, sobrenome, proficiência) */
+#name-section h1,
+#lastName-section h1,
+#proficiency-section h1 {
+    font-size: 1.5em; /* Tamanho de fonte de texto normal, um pouco maior que o padrão */
+    text-align: left; /* Alinhado à esquerda */
+    color: #5d2066; /* Cor do texto das perguntas agora é roxa */
+    font-weight: normal; /* Remove o negrito padrão do h1 */
+    line-height: 1.5;
+}
+
+/* Estilo para a caixa de texto da introdução */
+.intro-text-box {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 1.6;
+    color: #5d2066; /* Cor do texto roxa */
+    font-size: 1.1em; /* Adicione ou ajuste esta linha para o tamanho desejado */
+}
+
+.intro-text-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.intro-text-box li {
+    margin-bottom: 10px;
+}
+
+/* Estilo do input de texto para ter apenas a linha azul inferior */
+.text-input {
+    width: calc(100% - 0px); /* Ajusta a largura para considerar o padding da tela */
+    padding: 15px 0px 10px 0px; /* Ajusta o padding para a linha inferior e remove padding lateral */
+    margin-bottom: 25px;
+    border: none; /* Remove todas as bordas */
+    border-bottom: 2px solid #0190C1; /* Adiciona apenas a borda inferior azul */
+    background-color: transparent; /* Garante que o fundo do input seja transparente */
+    border-radius: 0; /* Remove qualquer arredondamento */
+    font-family: 'Aleo', serif;
+    font-size: 1.5em; /* Aumenta o tamanho da fonte para o texto digitado */
+    color: #5d2066; /* Cor do texto digitado agora é roxa */
+    box-sizing: border-box;
+    text-align: left; /* Alinha o texto digitado à esquerda */
+}
+
+/* Estilo para o placeholder (VISÍVEL e alinhado à esquerda) */
+.text-input::placeholder {
+    color: #95a5a6; /* Cor visível para o placeholder */
+    text-align: left; /* Alinha o placeholder à esquerda */
+}
+
+/* Estilo para o placeholder em navegadores WebKit (Chrome, Safari) */
+.text-input::-webkit-input-placeholder {
+    color: #95a5a6;
+    text-align: left;
+}
+
+/* Estilo para o placeholder em navegadores Mozilla Firefox */
+.text-input::-moz-placeholder {
+    color: #95a5a6;
+    text-align: left;
+}
+
+/* Estilo para o placeholder em navegadores Microsoft Edge */
+.text-input::-ms-input-placeholder {
+    color: #95a5a6;
+    text-align: left;
+}
+
+
+/* Botões principais (Iniciar, Próxima, Anterior, Refazer) */
+.main-button {
+    background-color: #0190C1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+    font-family: 'Aleo', serif;
+    font-weight: bold; /* TEXTO DOS BOTÕES EM NEGRITO */
+}
+
+.main-button:hover:not(:disabled) {
+    background-color: #017bb0;
+}
+
+.main-button:disabled {
+    background-color: rgba(1, 144, 193, 0.3); /* Azul com 30% de transparência */
+    cursor: not-allowed;
+}
+
+/* Estilo para o grupo de botão com hint */
+.button-with-hint-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha à esquerda por padrão */
+    gap: 15px;
+    margin-top: 30px;
+    width: 100%; /* Ocupa a largura total para alinhamento */
+}
+
+/* Estilo específico para o grupo do botão Iniciar para mantê-lo centralizado */
+#intro-section .button-with-hint-group {
+    justify-content: center; /* Sempre centralizado, mesmo em desktop */
+}
+
+/* Centraliza o botão da tela de preparação */
+#preparation-section .button-with-hint-group {
+    justify-content: center;
+}
+
+.enter-hint {
+    font-size: 0.9em;
+    color: #5d2066; /* COR DO TEXTO 'Pressione Enter' AGORA É ROXA */
+}
+
+.enter-hint kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #5d2066;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+/* Media query para mobile */
+/* --- OTIMIZAÇÃO PARA CELULAR (Media Query) --- */
+@media (max-width: 767px) {
+    /* Ajuste do container principal e margens */
+    body {
+        padding: 10px;
+    }
+
+    .screen, #intro-section {
+        padding: 20px 15px; /* Reduz o espaço em branco nas laterais */
+    }
+
+    /* Ajuste de Fontes para não quebrar o layout */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #name-section h1,
+    #lastName-section h1,
+    #proficiency-section h1 {
+        font-size: 1.3em;
+    }
+
+    .question-text {
+        font-size: 1.2em; /* Pergunta um pouco menor */
+        margin-bottom: 15px;
+    }
+
+    .text-input {
+        font-size: 1.2em; /* Input menor para não dar zoom automático no iPhone */
+    }
+
+    /* Ajuste das Alternativas */
+    .option-button {
+        font-size: 1em;
+        padding: 12px 10px; /* Melhora a área de toque para o dedo */
+    }
+
+    .option-letter {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        font-size: 0.8em;
+    }
+
+    /* Ajuste dos Botões Principais */
+    .button-with-hint-group, .navigation-buttons {
+        justify-content: center;
+        flex-direction: column; /* Empilha os botões se houver mais de um */
+        width: 100%;
+        gap: 10px;
+    }
+
+    .main-button {
+        width: 100%; /* Botões ocupam 100% da tela para facilitar o clique */
+        font-size: 1.1em;
+        padding: 15px;
+    }
+
+    .enter-hint {
+        display: none; /* Esconde a dica do "Enter" no celular */
+    }
+
+    /* Ajuste do Cronômetro */
+    #timerDisplay {
+        top: 10px;
+        right: 10px;
+        font-size: 1.1em; /* Cronômetro menor */
+        padding: 8px 12px;
+    }
+}
+
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #5d2066;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+.progress-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* REMOVIDO O FUNDO E A BORDA DO question-card */
+.question-card {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    border-radius: 0; /* Sem arredondamento */
+    padding: 0; /* Remove padding */
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* --- ESTILOS PARA O VÍDEO DO YOUTUBE --- */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #000; /* Fundo preto para o container do vídeo */
+    border-radius: 8px;
+}
+
+.video-container video {
+    position: absolute; /* Garante que o vídeo ocupe o espaço do container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garante que o vídeo seja exibido sem cortes, mantendo a proporção */
+    background-color: black; /* Fundo preto para o player de vídeo */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilo para o overlay que aparece após o vídeo ser reproduzido */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer; /* AGORA é clicável por padrão */
+}
+
+.video-overlay.disabled {
+    cursor: not-allowed; /* Só fica bloqueado quando .disabled */
+}
+/* --- FIM DOS ESTILOS PARA O VÍDEO DO YOUTUBE --- */
+
+
+.question-text {
+    font-size: 1.5em; /* Tamanho de fonte de texto normal */
+    color: #5d2066; /* Cor do texto das perguntas agora é roxa */
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: left; /* Alinhado à esquerda */
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column; /* Alinha as opções em coluna */
+    gap: 15px;
+}
+
+/* Botões de opção de resposta (Geral) */
+.option-button {
+    display: flex; /* Para alinhar a letra e o texto lado a lado */
+    align-items: center;
+    background-color: rgba(1, 144, 193, 0.1); /* Fundo azul claro quase transparente */
+    border: 1px solid #0190C1; /* Borda fina azul */
+    border-radius: 8px; /* Borda arredondada */
+    padding: 10px 15px; /* Padding interno */
+    font-size: 1.2em;
+    color: #0190C1; /* Cor do texto padrão azul */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    text-align: left; /* Alinha o conteúdo do botão à esquerda */
+    font-family: 'Aleo', serif;
+    font-weight: bold;
+}
+
+.option-button:hover:not(.selected):not(.correct):not(.incorrect) {
+    background-color: rgba(1, 144, 193, 0.2); /* Fundo um pouco mais visível no hover */
+    border-color: #017bb0; /* Borda azul mais escura no hover */
+    color: #017bb0; /* Texto azul mais escuro no hover */
+}
+
+.option-button.selected {
+    background-color: #0190C1; /* Fundo azul quando selecionado */
+    border-color: #0190C1; /* Borda azul quando selecionado */
+    color: white; /* Texto branco quando selecionado */
+}
+
+.option-button.selected .option-letter {
+    background-color: white; /* Fundo branco para a letra selecionada */
+    color: #0190C1; /* Texto azul para a letra selecionada */
+    border-color: white; /* Borda branca para a letra selecionada */
+}
+
+.option-button.correct {
+    background-color: #2ecc71; /* Fundo verde para a opção correta */
+    border-color: #2ecc71;
+    color: white;
+}
+
+.option-button.correct .option-letter {
+    background-color: white;
+    color: #2ecc71;
+    border-color: white;
+}
+
+.option-button.incorrect {
+    background-color: #e74c3c; /* Fundo vermelho para a opção incorreta */
+    border-color: #e74c3c;
+    color: white;
+}
+
+.option-button.incorrect .option-letter {
+    background-color: white;
+    color: #e74c3c;
+    border-color: white;
+}
+
+.option-letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; /* Tamanho do quadrado da letra */
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco 90% opaco para a letra */
+    color: #0190C1; /* Texto azul para a letra */
+    border: 1px solid #0190C1; /* Borda fina azul para a letra */
+    border-radius: 4px; /* Levemente arredondado */
+    margin-right: 15px; /* Espaçamento entre a letra e o texto da opção */
+    font-size: 0.9em; /* Tamanho da fonte da letra */
+    flex-shrink: 0; /* Evita que a letra encolha */
+}
+
+.option-text {
+    flex-grow: 1; /* Permite que o texto da opção ocupe o espaço restante */
+}
+
+
+.navigation-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha à esquerda por padrão */
+    gap: 15px;
+    margin-top: 30px;
+    width: 100%; /* Ocupa a largura total para alinhamento */
+}
+
+/* REMOVIDO O FUNDO E A BORDA DA #results-section */
+#results-section {
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    border-radius: 0; /* Sem arredondamento */
+    padding: 0; /* Remove padding */
+    text-align: left;
+    margin-top: 40px;
+}
+
+#results-section h2 {
+    color: #5d2066;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#results-section p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#results-section strong {
+    color: #5d2066;
+}
+
+#detailedFeedback {
+    margin-top: 25px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.feedback-item {
+    background-color: rgba(1, 144, 193, 0.1);
+    border: 1px solid #0190C1;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.feedback-item p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.feedback-item .question-feedback {
+    font-weight: bold;
+    color: #0190C1;
+}
+
+.feedback-item .user-answer-feedback {
+    color: #e74c3c;
+}
+
+.feedback-item .correct-answer-feedback {
+    color: #27ae60;
+}
+
+.feedback-item .explanation-feedback {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+.proficiency-options {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Estilo específico para os botões de proficiência sem a letra */
+.proficiency-option {
+    display: block; /* Volta a ser um bloco para ocupar a largura total */
+    text-align: left; /* Alinha o texto à esquerda */
+    /* Herda os estilos de .option-button, mas remove o display flex */
+    /* e ajusta o padding para compensar a falta da letra */
+    padding: 10px 15px; /* Padding interno */
+}
+
+/* Garante que o texto da opção de proficiência ocupe todo o espaço */
+.proficiency-option .option-text {
+    flex-grow: 1;
+    width: 100%; /* Garante que o texto ocupe a largura total disponível */
+}
+
+/* NOVO ESTILO para a mensagem da tela de preparação */
+.preparation-text {
+    font-size: 2.3em; /* Tamanho maior para destaque */
+    color: #5d2066; /* Cor roxa */
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-align: center; /* Centraliza o texto */
+    font-weight: normal; /* Deixa em negrito para destaque */
+}
+
+/* --- ESTILOS DO CRONÔMETRO --- */
+#timerDisplay {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #5d2066;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: none; /* Escondido por padrão */
+    font-family: 'Aleo', serif;
+}
+
+#timerDisplay.warning {
+    background-color: #e74c3c; /* Fica vermelho no minuto final */
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
