@@ -593,67 +593,67 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q36',
-            topic: 'technology and society',
-            question: "Listen to the audio in the video. Then, answer the question below:<br><br><i>What does the speaker highlight as a significant consequence of the digital era's influence on society?</i>",
+            topic: `l'amicizia su internet`,
+            question: "Ascolta l'audio e rispondi alla domanda:<br><br><i>Secondo lo speaker, qual è il paradosso delle amicizie nell'era digitale?</i>",
             options: [
-                { id: 'opt36a', text: "The increasing integration of artificial intelligence in people's life." },
-                { id: 'opt36b', text: "The need for constant reassessment of our relationship with technology." },
-                { id: 'opt36c', text: "The decline of traditional forms of communication among friends." }
+                { id: 'opt36a', text: "Più siamo connessi digitalmente, più abbiamo il coraggio di affrontare conversazioni difficili." },
+                { id: 'opt36b', text: "I messaggi e i vocali hanno sostituito completamente le conversazioni faccia a faccia in modo positivo." },
+                { id: 'opt36c', text: "La connettività digitale crea una sensazione di vicinanza che non sempre corrisponde a una vera intimità." }
             ],
-            correctAnswerId: 'opt36b',
-            explanation: "O interlocutor menciona que estamos constantemente tentando descobrir onde nos posicionamos em relação à tecnologia e que tipo de relacionamento queremos ter com ela.",
+            correctAnswerId: 'opt36c',
+            explanation: "O interlocutor questiona se a sensação de estar conectado digitalmente corresponde a uma proximidade real, visto que a conectividade digital paradoxalmente parece reduzir o coragem para conversas verdadeiras.",
             videoSrc: 'q36.mp4'
         },
         {
             id: 'q37',
-            topic: 'environment',
-            question: "Listen to the audio in the video. Then, answer the question below:<br><br><i>What is the speaker's attitude towards the concept of a circular economy in the audio?</i>",
+            topic: 'i piccoli negozi in città',
+            question: "Ascolta l'audio e rispondi alla domanda:<br><br><i>Qual è la preoccupazione principale dello speaker riguardo alla scomparsa dei negozi di quartiere?</i>",
             options: [
-                { id: 'opt37a', text: "Enthusiastic, considering it a crucial aspect of responsible global citizenship." },
-                { id: 'opt37b', text: "Skeptical, thinking it does not have a significant impact on environmental issues." },
-                { id: 'opt37c', text: "Indifferent, as they believe it is just a passing trend." }
+                { id: 'opt37a', text: "La perdita di spazi di incontro e del senso di comunità nei quartieri urbani." },
+                { id: 'opt37b', text: "Il cambiamento nelle abitudini alimentari della popolazione urbana." },
+                { id: 'opt37c', text: "La difficoltà di trovare prodotti freschi e di qualità nei supermercati moderni causata dalla concorrenza del commercio online." }
             ],
             correctAnswerId: 'opt37a',
-            explanation: "O interlocutor demonstra entusiasmo, afirmando que a economia circular está ganhando força e se tornou um aspecto crucial de ser um cidadão global responsável.",
+            explanation: "A preocupação central não é o que se compra, mas o que se perde em termos de convivência e sentido de comunidade quando os pequenos negócios desaparecem em decorrência da evolução dos centros urbanos.",
             videoSrc: 'q37.mp4'
         },
         {
             id: 'q38',
-            topic: 'workplace',
-            question: "Listen to the audio in the video. Then, answer the question below:<br><br><i>How does the speaker describe the transformation in traditional workplace dynamics?</i>",
+            topic: 'il rispetto per il cibo',
+            question: "Ascolta l'audio e rispondi alla domanda:<br><br><i>Qual è la riflessione principale dello speaker nel suo discorso?</i>",
             options: [
-                { id: 'opt38a', text: "Expressing concerns about the isolation of employees in remote work settings." },
-                { id: 'opt38b', text: "Highlighting a shift towards flexible and remote work arrangements." },
-                { id: 'opt38c', text: "Indicating that it leads to a decline in effective communication." }
+                { id: 'opt38a', text: "I supermercati dovrebbero abbassare i prezzi per ridurre gli sprechi alimentari." },
+                { id: 'opt38b', text: "Abbiamo perso il rispetto per il cibo e produciamo troppo spreco nella vita quotidiana." },
+                { id: 'opt38c', text: "Le generazioni più anziane avevano abitudini alimentari più sane rispetto alle giovani." }
             ],
             correctAnswerId: 'opt38b',
-            explanation: "A interlocutora destaca como a flexibilidade e o trabalho remoto se tornaram partes integrantes e essenciais da dinâmica atual do local de trabalho.",
+            explanation: "A ideia central é a desconexão com o valor do alimento e o excesso de desperdício na sociedade atual.",
             videoSrc: 'q38.mp4'
         },
         {
             id: 'q39',
-            topic: 'culture',
-            question: "Listen to the audio in the video. Then, answer the question below:<br><br><i>What does the expression \"putting up with each other\" mean?</i>",
+            topic: 'la diversità tra le persone',
+            question: "Ascolta l'audio e rispondi alla domanda:<br><br><i>Quale distinzione fondamentale fa lo speaker nel suo discorso sulla diversità culturale nelle città?</i>",
             options: [
-                { id: 'opt39a', text: "Tolerating and accepting each other despite differences." },
-                { id: 'opt39b', text: "Embracing and celebrating each other's differences." },
-                { id: 'opt39c', text: "Physically putting up various objects as a symbol of unity." }
+                { id: 'opt39a', text: "La differenza tra il semplice convivere con l'altro e il riconoscerne genuinamente il valore." },
+                { id: 'opt39b', text: "La differenza tra città grandi e piccole nel modo di accogliere culture diverse." },
+                { id: 'opt39c', text: "Il contrasto tra culture che si integrano facilmente e culture che faticano ad adattarsi." }
             ],
             correctAnswerId: 'opt39a',
-            explanation: "A expressão 'putting up with' é um phrasal verb que significa tolerar ou suportar algo/alguém, mesmo havendo diferenças ou dificuldades.",
+            explanation: "O interlocutor distingue claramente entre a mera coexistência e o reconhecimento genuíno do valor que o outro traz consigo. Para ele, é essa curiosidade real pelo outro que transforma a diversidade de um problema a ser gerido numa verdadeira riqueza coletiva.",
             videoSrc: 'q39.mp4'
         },
         {
             id: 'q40',
-            topic: 'technology / ethics',
-            question: "Listen to the audio in the video. Then, answer the question below:<br><br><i>What does the speaker mean by \"without messing everything up\"?</i>",
+            topic: 'il tempo libero',
+            question: "Ascolta l'audio e rispondi alla domanda:<br><br><i>Quale fenomeno sociale osserva lo speaker nel suo discorso?</i>",
             options: [
-                { id: 'opt40a', text: "Experimenting with technology without considering the potential risks." },
-                { id: 'opt40b', text: "Introducing groundbreaking technologies without any consequences." },
-                { id: 'opt40c', text: "Utilizing transformative technologies responsibly and ethically." }
+                { id: 'opt40a', text: "La tendenza delle nuove generazioni a dedicare troppo tempo ai social media." },
+                { id: 'opt40b', text: "Il fatto che i giovani di oggi abbiano meno tempo libero rispetto alle generazioni precedenti." },
+                { id: 'opt40c', text: "La pressione contemporanea a riempire ogni momento con attività produttive, a scapito del vero riposo." }
             ],
             correctAnswerId: 'opt40c',
-            explanation: "A frase 'without messing everything up', no contexto da fala da interlocutora, refere-se a usar as novas ferramentas tecnológicas de forma responsável e ética, para não causar danos à sociedade.",
+            explanation: "A interlocutora observa que o tempo livre perdeu seu significado original e se transformou em algo a ser preenchido e justificado, frequentemente por meio de postagens e documentação nas redes sociais. Ela aponta que a capacidade de simplesmente não fazer nada foi esquecida ou se tornou fonte de culpa.",
             videoSrc: 'q40.mp4'
         }
     ];
