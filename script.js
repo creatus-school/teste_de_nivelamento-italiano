@@ -109,157 +109,156 @@ document.addEventListener('DOMContentLoaded', () => {
     const questions = [
         {
             id: 'q1',
-            type: 'grammar',
-            topic: 'verb_tenses',
-            question: "_________ the store. Do you want to come with me?",
+            topic: 'presente dei verbi regolari',
+            question: "La mia amica ___________ una pizza deliziosa per la cena.",
             options: [
-                { id: 'opt1a', text: "Am going to" },
-                { id: 'opt1b', text: "I going to" },
-                { id: 'opt1c', text: "I'm going to" },
-                { id: 'opt1d', text: "Going to" }
+                { id: 'opt1a', text: "cucinare" },
+                { id: 'opt1b', text: "cucina" },
+                { id: 'opt1c', text: "cucinano" },
+                { id: 'opt1d', text: "cucini" }
             ],
-            correctAnswerId: 'opt1c',
-            explanation: "A forma correta para expressar uma ação futura planejada é 'I'm going to' seguido do verbo base.",
+            correctAnswerId: 'opt1b',
+            explanation: "Concordância verbal no presente do indicativo para a terceira pessoa do singular ('lei' - a minha amiga).",
             youtubeVideoId: null
         },
         {
             id: 'q2',
-            topic: 'past_simple',
-            question: "Yesterday, I __________ to the cinema with my friends.",
+            topic: 'passato prossimo',
+            question: "Ieri sera, noi ___________ un bel film alla televisione.",
             options: [
-                { id: 'opt2a', text: "went" },
-                { id: 'opt2b', text: "going" },
-                { id: 'opt2c', text: "goed" },
-                { id: 'opt2d', text: "go" }
+                { id: 'opt2a', text: "guardiamo" },
+                { id: 'opt2b', text: "guardavamo" },
+                { id: 'opt2c', text: "abbiamo guardato" },
+                { id: 'opt2d', text: "guarderemo" }
             ],
-            correctAnswerId: 'opt2a',
-            explanation: "O passado simples de 'go' é 'went'.",
+            correctAnswerId: 'opt2c',
+            explanation: "Uso do passato prossimo para uma ação concluída no passado, que se forma com o auxiliar 'avere' e o participio passato do verbo principal.",
             youtubeVideoId: null
         },
         {
             id: 'q3',
-            topic: 'present_simple',
-            question: "My sister is a teacher. She __________ English at a school.",
+            topic: 'verbi riflessivi',
+            question: "Il mio gatto _______________ sempre sul divano quando dorme.",
             options: [
-                { id: 'opt3a', text: "teaching" },
-                { id: 'opt3b', text: "teaches" },
-                { id: 'opt3c', text: "teach" },
-                { id: 'opt3d', text: "teached" }
+                { id: 'opt3a', text: "stà" },
+                { id: 'opt3b', text: "è" },
+                { id: 'opt3c', text: "rimane" },
+                { id: 'opt3d', text: "si sdraia" }
             ],
-            correctAnswerId: 'opt3b',
-            explanation: "Para a terceira pessoa do singular (she) no Present Simple, adiciona-se '-es' ao verbo 'teach'.",
+            correctAnswerId: 'opt3d',
+            explanation: "Verbo reflexivo 'sdraiarsi' (deitar-se) no presente do indicativo, terceira pessoa do singular.",
             youtubeVideoId: null
         },
         {
             id: 'q4',
-            topic: 'adjectives',
-            question: "<strong>A:</strong> What's the weather like today?<br><strong>B:</strong> It's very ________.",
+            topic: 'preposizioni articolate',
+            question: "La borsa è ____________ tavolo.",
             options: [
-                { id: 'opt4a', text: "hotter" },
-                { id: 'opt4b', text: "hot" },
-                { id: 'opt4c', text: "hottest" },
-                { id: 'opt4d', text: "hotnes" }
+                { id: 'opt4a', text: "sotto" },
+                { id: 'opt4b', text: "in" },
+                { id: 'opt4c', text: "sul" },
+                { id: 'opt4d', text: "con" }
             ],
-            correctAnswerId: 'opt4b',
-            explanation: "O adjetivo simples 'hot' é o correto para descrever o clima sem fazer comparação.",
+            correctAnswerId: 'opt4c',
+            explanation: "Uso da preposição 'su' (sobre) + o artigo 'il' (masculino) = 'sul' e é usado para indicar posição.",
             youtubeVideoId: null
         },
         {
             id: 'q5',
-            topic: 'object pronouns',
-            question: "Can you pass ________ the salt, please?",
+            topic: 'verbi irregolari al presente',
+            question: "Quanti anni ________ tu?",
             options: [
-                { id: 'opt5a', text: "me" },
-                { id: 'opt5b', text: "by" },
-                { id: 'opt5c', text: "for" },
-                { id: 'opt5d', text: "at" }
+                { id: 'opt5a', text: "hai" },
+                { id: 'opt5b', text: "sei" },
+                { id: 'opt5c', text: "ha" },
+                { id: 'opt5d', text: "avere" }
             ],
             correctAnswerId: 'opt5a',
-            explanation: "A construção correta é 'pass me the salt', pois o pronome 'me', assim como os outros object pronouns existentes, é usado para indicar quem recebe a ação.",
+            explanation: "Uso do verbo 'avere' (ter) para perguntar a idade, na segunda pessoa do singular.",
             youtubeVideoId: null
         },
         {
             id: 'q6',
-            topic: 'there to be',
-            question: "_________ a man studying in the library.",
+            topic: 'pronomi personali',
+            question: "<strong>A:</strong> Di dove sei?<br><strong>B:</strong> ________ sono di Roma.",
             options: [
-                { id: 'opt6a', text: "There are" },
-                { id: 'opt6b', text: "There were" },
-                { id: 'opt6c', text: "There is" },
-                { id: 'opt6d', text: "There aren't" }
+                { id: 'opt6a', text: "Tu" },
+                { id: 'opt6b', text: "Lei" },
+                { id: 'opt6c', text: "Io" },
+                { id: 'opt6d', text: "Noi" }
             ],
             correctAnswerId: 'opt6c',
-            explanation: "Usa-se 'there is' (forma presente de 'there to be') para substantivos singulares.",
+            explanation: "Pronome pessoal sujeito 'io' (eu) para responder à pergunta sobre a origem de acordo com o contexto.",
             youtubeVideoId: null
         },
         {
             id: 'q7',
-            topic: 'quantifiers',
-            question: "How __________ sugar do you put in your coffee?",
+            topic: 'aggettivi',
+            question: "Vorrei __________ informazioni sul corso di italiano.?",
             options: [
-                { id: 'opt7a', text: "a lot of" },
-                { id: 'opt7b', text: "many" },
-                { id: 'opt7c', text: "much" },
-                { id: 'opt7d', text: "a little" }
+                { id: 'opt7a', text: "qualche" },
+                { id: 'opt7b', text: "alcune" },
+                { id: 'opt7c', text: "un po' di" },
+                { id: 'opt7d', text: "dei" }
             ],
-            correctAnswerId: 'opt7c',
-            explanation: "'sugar', assim como café, feijão, água, entre outros, é um substantivo incontável, então usa-se 'much'.",
+            correctAnswerId: 'opt7b',
+            explanation: "'Un po' di' é usado para indicar uma quantidade indefinida de substantivos incontáveis ou plurais. 'Informazioni' é plural.",
             youtubeVideoId: null
         },
         {
             id: 'q8',
-            topic: 'present_perfect',
-            question: "How many times __________ to Paris?",
+            topic: `l'imperfetto indicativo`,
+            question: "Quando ero bambino, __________ spesso al parco con i miei genitori.",
             options: [
-                { id: 'opt8a', text: "been you" },
-                { id: 'opt8b', text: "you been" },
-                { id: 'opt8c', text: "you have been" },
-                { id: 'opt8d', text: "have you been" }
+                { id: 'opt8a', text: "andavo" },
+                { id: 'opt8b', text: "sono andato" },
+                { id: 'opt8c', text: "andrei" },
+                { id: 'opt8d', text: "andrò" }
             ],
-            correctAnswerId: 'opt8d',
-            explanation: "A estrutura correta do Present Perfect em perguntas é 'Have/Has + sujeito + past participle'.",
+            correctAnswerId: 'opt8a',
+            explanation: "Uso do imperfetto indicativo para descrever uma ação habitual ou repetida no passado.",
             youtubeVideoId: null
         },
         {
             id: 'q9',
-            topic: 'past_continuous',
-            question: "Last weekend, while I __________ TV, the power suddenly went out.",
+            topic: `periodo ipotetico`,
+            question: "Se ________ tempo, ti aiuterò con i compiti.",
             options: [
-                { id: 'opt9a', text: "watch" },
-                { id: 'opt9b', text: "was watching" },
-                { id: 'opt9c', text: "were watching" },
-                { id: 'opt9d', text: "watched" }
+                { id: 'opt8a', text: "avrò" },
+                { id: 'opt8b', text: "avessi" },
+                { id: 'opt8c', text: "ho" },
+                { id: 'opt8d', text: "avrei" }
             ],
-            correctAnswerId: 'opt9b',
-            explanation: "Para uma ação contínua no passado interrompida por outra, usa-se Past Continuous ('was watching').",
+            correctAnswerId: 'opt8a',
+            explanation: "Periodo ipotetico del primo tipo (realidade): 'se + futuro simples, futuro simples'",
             youtubeVideoId: null
         },
         {
             id: 'q10',
-            topic: 'modals',
-            question: "You _______ smoke in this area. It's not allowed.",
+            topic: 'presente dei verbi irregolari',
+            question: "Non __________ uscire stasera, sono troppo stanco.",
             options: [
-                { id: 'opt10a', text: "don't have to" },
-                { id: 'opt10b', text: "have to" },
-                { id: 'opt10c', text: "must" },
-                { id: 'opt10d', text: "mustn't" }
+                { id: 'opt9a', text: "posso" },
+                { id: 'opt9b', text: "devo" },
+                { id: 'opt9c', text: "voglio" },
+                { id: 'opt9d', text: "so" }
             ],
-            correctAnswerId: 'opt10d',
-            explanation: "'Mustn't' é a contração de 'must + not' e indica proibição.",
+            correctAnswerId: 'opt9c',
+            explanation: "Uso do verbo modal 'potere' (poder) para expressar incapacidade ou impossibilidade.",
             youtubeVideoId: null
         },
         {
             id: 'q11',
-            topic: 'modals',
-            question: "<strong>A:</strong> Did you study for tomorrow's exam?<br><strong>B:</strong> Yes, but I __________ dedicate more time to it this afternoon.",
+            topic: 'verbo esserci',
+            question: "<strong>A:</strong> Hai già visitato Firenze?<br><strong>B:</strong> No, non ____________ ancora stata.",
             options: [
-                { id: 'opt11a', text: "used to" },
-                { id: 'opt11b', text: "have" },
-                { id: 'opt11c', text: "should" },
-                { id: 'opt11d', text: "need" }
+                { id: 'opt10a', text: "ci sono" },
+                { id: 'opt10b', text: "ci sono mai" },
+                { id: 'opt10c', text: "ci sono ancora" },
+                { id: 'opt10d', text: "ci sono stata" }
             ],
-            correctAnswerId: 'opt11c',
-            explanation: "'Should' expressa uma recomendação, sugestão ou obrigação leve.",
+            correctAnswerId: 'opt10a',
+            explanation: "Uso do pronome 'ci' (lá) e concordância do participio passato com o sujeito feminino ('stata').",
             youtubeVideoId: null
         },
         {
