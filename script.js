@@ -723,7 +723,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     nextLastNameButton.addEventListener('click', () => {
         userData.lastName = lastNameInput.value.trim();
-        proficiencyQuestion.textContent = `${userData.firstName}, você se considera em qual nível de proficiência da língua inglesa:`;
+        proficiencyQuestion.textContent = `${userData.firstName}, você se considera em qual nível de proficiência da língua italiana:`;
         showScreen(proficiencySection);
     });
 
