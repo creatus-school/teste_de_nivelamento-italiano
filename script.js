@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q9',
-            topic: `periodo ipotetico`,
+            topic: `periodo ipotetico della realtà`,
             question: "Se ________ tempo, ti aiuterò con i compiti.",
             options: [
                 { id: 'opt8a', text: "avrò" },
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q12',
-            topic: `periodo ipotetico dell'irrealtà`,
+            topic: `periodo ipotetico della possibilità`,
             question: "Se _________ più soldi, comprerei una casa più grande.",
             options: [
                 { id: 'opt12a', text: "avessi" },
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt12d', text: "avrei" }
             ],
             correctAnswerId: 'opt12a',
-            explanation: "'Used to' é usado para hábitos ou estados passados que não são mais colocados em prática.",
+            explanation: "Periodo ipotetico della possibilità: 'se + imperfeito do subjuntivo, condicional simples'",
             youtubeVideoId: null
         },
         {
