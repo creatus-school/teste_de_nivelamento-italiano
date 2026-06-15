@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q14',
-            topic: 'compound preposition / directions',
+            topic: 'congiuntivo',
             question: "È importante che tu ____________ la verità.",
             options: [
                 { id: 'opt14a', text: "dici" },
@@ -300,12 +300,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt14d', text: "dicessi" }
             ],
             correctAnswerId: 'opt14b',
-            explanation: "'Next to the door' indica o local onde o pacote deve ser colocado.",
+            explanation: "Expressões de importância ou necessidade ('è importante che') exigem o subjuntivo.",
             youtubeVideoId: null
         },
         {
             id: 'q15',
-            topic: 'superlatives',
+            topic: 'congiuntivo',
             question: "Nonostante ___________ piovendo, siamo usciti a fare una passeggiata.",
             options: [
                 { id: 'opt15a', text: "è" },
@@ -314,12 +314,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt15d', text: "sia" }
             ],
             correctAnswerId: 'opt15c',
-            explanation: "Para superlativos com adjetivos longos, usa-se 'the most + adjective'.",
+            explanation: "A conjunção 'nonostante' (apesar de) exige o subjuntivo.",
             youtubeVideoId: null
         },
         {
             id: 'q16',
-            topic: 'conditionals',
+            topic: `periodo ipotetico dell'irrealtà`,
             question: "Se ___________ studiato di più, avresti superato l'esame. ",
             options: [
                 { id: 'opt16a', text: "avrai" },
@@ -328,26 +328,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt16d', text: "avessi" }
             ],
             correctAnswerId: 'opt16d',
-            explanation: "A resposta usa um condicional para explicar a precaução em um dia ensolarado.",
+            explanation: "Periodo ipotetico dell'irrealtà: 'se + trapassato do subjuntivo, condizionale'.",
             youtubeVideoId: null
         },
         {
             id: 'q17',
-            topic: 'future continuous',
+            topic: 'discorso indiretto',
             question: "Mi ha chiesto ___________ fossi andato.",
             options: [
-                { id: 'opt17a', text: "dove" },
+                { id: 'opt17a', text: "se" },
                 { id: 'opt17b', text: "che" },
-                { id: 'opt17c', text: "se" },
+                { id: 'opt17c', text: "dove" },
                 { id: 'opt17d', text: "quando" }
             ],
             correctAnswerId: 'opt17c',
-            explanation: "A pergunta está no Future Continuous, e a resposta correta também usa essa estrutura para descrever uma ação contínua no futuro.",
+            explanation: "Discurso indireto com pergunta, mantendo o advérbio interrogativo 'dove'.",
             youtubeVideoId: null
         },
         {
             id: 'q18',
-            topic: 'third onditional',
+            topic: 'congiuntivo',
             question: "È probabile che __________ domani.",
             options: [
                 { id: 'opt18a', text: "piove" },
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt18d', text: "piovesse" }
             ],
             correctAnswerId: 'opt18b',
-            explanation: "A frase usa o Third Conditional para expressar um arrependimento sobre uma situação passada hipotética.",
+            explanation: "Expressões de probabilidade ou incerteza ('è probabile che') exigem o subjuntivo.",
             youtubeVideoId: null
         },
         {
@@ -370,12 +370,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt19d', text: "chi" }
             ],
             correctAnswerId: 'opt19a',
-            explanation: "A resposta oferece um conselho e usa uma question tag apropriada para a situação.",
+            explanation: "Pronome relativo 'che' para introduzir uma oração subordinada adjetiva.",
             youtubeVideoId: null
         },
         {
             id: 'q20',
-            topic: 'advice / modal verbs',
+            topic: 'congiuntivo imperfetto',
             question: "Vorrei che tu __________ più attento.",
             options: [
                 { id: 'opt20a', text: "eri" },
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { id: 'opt20d', text: "fossi" }
             ],
             correctAnswerId: 'opt20d',
-            explanation: "A resposta oferece uma possível solução para uma situação futura similar.",
+            explanation: "Verbos de desejo ou vontade ('vorrei che') exigem o subjuntivo imperfeito.",
             youtubeVideoId: null
         },
         {
