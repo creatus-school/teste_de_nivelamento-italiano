@@ -389,205 +389,205 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q21',
-            topic: 'quantifiers',
-            question: "Unfortunately, I don't have many books to read during my vacation.",
+            topic: `'si' impersonale`,
+            question: "Si dice che __________ un nuovo film di quel regista.",
             options: [
-                { id: 'opt21a', text: "Your parents must have a few books at home." },
-                { id: 'opt21b', text: "I need a few comic books for my sister, maybe you could help me." },
-                { id: 'opt21c', text: "My brother has little will to read, either." },
-                { id: 'opt21d', text: "I think you'll have little time for reading." }
+                { id: 'opt21a', text: "uscirà" },
+                { id: 'opt21b', text: "uscisse" },
+                { id: 'opt21c', text: "esca" },
+                { id: 'opt21d', text: "è uscito" }
             ],
-            correctAnswerId: 'opt21d',
-            explanation: "A resposta sugere que a pessoa não terá muito tempo pra ler, por isso ela não deveria se preocupar com o fato de não ter muitos livros para ler durante suas férias.",
+            correctAnswerId: 'opt21a',
+            explanation: "A construção impessoal 'si dice che' pode ser seguida pelo indicativo quando a ação é vista como provável ou futura.",
             youtubeVideoId: null
         },
         {
             id: 'q22',
-            topic: '-ing / verbs',
-            question: "We could feel the captivating melody of the orchestra ____________ through the concert hall.",
+            topic: 'vocabolario',
+            question: "Il suo discorso, __________ di passione, ha commosso l'intera platea.",
             options: [
-                { id: 'opt22a', text: "envisioning" },
-                { id: 'opt22b', text: "dissolving" },
-                { id: 'opt22c', text: "resounding" }
+                { id: 'opt22a', text: "impregnato" },
+                { id: 'opt22b', text: "intriso" },
+                { id: 'opt22c', text: "colmo" }
             ],
-            correctAnswerId: 'opt22c',
-            explanation: "'Resounding' significa ecoar ou soar fortemente, o que se encaixa no contexto de uma melodia em um salão de concertos.",
+            correctAnswerId: 'opt22b',
+            explanation: "'Intriso' (imbuído, saturado) é o termo mais preciso e formal para descrever algo preenchido ou permeado por um sentimento ou qualidade.",
             youtubeVideoId: null
         },
         {
             id: 'q23',
-            topic: 'past / regular verbs',
-            question: "He ________ a new language during his sabbatical in Europe.",
+            topic: 'vocabolario',
+            question: "Nonostante le difficoltà, ha dimostrato una __________ resilienza.",
             options: [
-                { id: 'opt23a', text: "learned" },
-                { id: 'opt23b', text: "achieved" },
-                { id: 'opt23c', text: "developed" }
+                { id: 'opt23a', text: "ammirevole" },
+                { id: 'opt23b', text: "notevole" },
+                { id: 'opt23c', text: "considerevole" }
             ],
             correctAnswerId: 'opt23a',
-            explanation: "'Learned' (passado de 'aprender') é o verbo mais apropriado para adquirir uma nova língua.",
+            explanation: "O contexto destaca a superação de obstáculos difíceis, uma qualidade moral que suscita profunda admiração e aprovação. Usar 'notável' indicaria apenas uma grande dose de resiliência, enquanto 'admirável' confere ao gesto o devido valor de elogio.",
             youtubeVideoId: null
         },
         {
             id: 'q24',
-            topic: 'verbs',
-            question: "Make sure you ________ all the ingredients before you start cooking.",
+            topic: 'vocabolario',
+            question: "La sua capacità di ____________ tra diverse culture è davvero impressionante.",
             options: [
-                { id: 'opt24a', text: "compile" },
-                { id: 'opt24b', text: "accumulate" },
-                { id: 'opt24c', text: "gather" }
+                { id: 'opt24a', text: "destreggiarsi" },
+                { id: 'opt24b', text: "barcamenarsi" },
+                { id: 'opt24c', text: "navigare" }
             ],
             correctAnswerId: 'opt24c',
-            explanation: "'Gather' (reunir) é o verbo mais comum para coletar ingredientes antes de cozinhar.",
+            explanation: "Nesse contexto, 'navigare', em seu sentido figurado, é o termo mais preciso para indicar a capacidade de agir com competência, destreza e consciência, como, por exemplo, diferentes culturas, situações sociais ou contextos de trabalho.",
             youtubeVideoId: null
         },
         {
             id: 'q25',
-            topic: 'past / regular verbs',
-            question: "Last night, my friends laughed so loudly that it ________ through the apartment, awakening my neighbors.",
+            topic: 'vocabolario',
+            question: "L'artista ha saputo ______________ l'essenza della bellezza in un'unica opera.",
             options: [
-                { id: 'opt25a', text: "vanished" },
-                { id: 'opt25b', text: "echoed" },
-                { id: 'opt25c', text: "criticized" }
+                { id: 'opt25a', text: "catturare" },
+                { id: 'opt25b', text: "cogliere" },
+                { id: 'opt25c', text: "racchiudere" }
             ],
-            correctAnswerId: 'opt25b',
-            explanation: "'Echoed' (ecoou) descreve o som se espalhando e sendo repetido.",
+            correctAnswerId: 'opt25c',
+            explanation: "O verbo 'racchiudere' sugere a ideia de conter algo vasto ou complexo (como “a essência da beleza”) dentro de um limite preciso (como “uma única obra”). Ele transmite perfeitamente a imagem de um processo de síntese.",
             youtubeVideoId: null
         },
         {
             id: 'q26',
-            topic: 'verbs',
-            question: "It's essential to ________ the historical significance of the artwork during the museum tour.",
+            topic: 'vocabolario',
+            question: "È fondamentale ______________ le fonti prima di diffondere notizie.",
             options: [
-                { id: 'opt26a', text: "seize" },
-                { id: 'opt26b', text: "grasp" },
-                { id: 'opt26c', text: "comprehend" }
+                { id: 'opt26a', text: "controllare" },
+                { id: 'opt26b', text: "verificare" },
+                { id: 'opt26c', text: "accertare" }
             ],
-            correctAnswerId: 'opt26c',
-            explanation: "'Comprehend' (compreender, entender profundamente) é o vocabulário mais adequado para entender o significado de algo.",
+            correctAnswerId: 'opt26b',
+            explanation: "'Verificare' significa verificar a veracidade ou a autenticidade de algo por meio de provas ou confirmações. É o termo padrão quando se fala em “fact-checking” ou na confiabilidade de fontes de uma informação.",
             youtubeVideoId: null
         },
         {
             id: 'q27',
-            topic: 'verbs',
-            question: "It's important to ________ your plants regularly to help them grow strong and healthy.",
+            topic: 'vocabolario',
+            question: "La sua eloquenza era tale da _____________ l'attenzione di tutti i presenti.",
             options: [
-                { id: 'opt27a', text: "inspect" },
-                { id: 'opt27b', text: "examine" },
-                { id: 'opt27c', text: "check" }
+                { id: 'opt27a', text: "calamitare" },
+                { id: 'opt27b', text: "attrarre" },
+                { id: 'opt27c', text: "focalizzare" }
             ],
-            correctAnswerId: 'opt27c',
-            explanation: "'Check' (verificar) é o verbo mais comum para monitorar plantas regularmente.",
+            correctAnswerId: 'opt27a',
+            explanation: "'Calamitare' deriva de “calamita” (ímã) e transmite perfeitamente a ideia de uma força irresistível que atrai para si, tornando-o o termo ideal para descrever uma eloquência excepcional que mantém o público literalmente “grudado” no orador.",
             youtubeVideoId: null
         },
         {
             id: 'q28',
-            topic: '-ing / verbs',
-            question: "The delicious aroma of freshly baked cookies is ________ throughout the entire kitchen.",
+            topic: 'vocabolario',
+            question: "Il progetto è stato ______________ a causa di problemi finanziari imprevisti.",
             options: [
-                { id: 'opt28a', text: "spreading" },
-                { id: 'opt28b', text: "concerning" },
-                { id: 'opt28c', text: "awaiting" }
+                { id: 'opt28a', text: "accantonato" },
+                { id: 'opt28b', text: "sospeso" },
+                { id: 'opt28c', text: "rimandato" }
             ],
-            correctAnswerId: 'opt28a',
-            explanation: "'Spreading' (espalhando) descreve o aroma se difundindo pela cozinha.",
+            correctAnswerId: 'opt28b',
+            explanation: "'sospeso' indica que o projeto foi suspenso temporariamente, com a intenção ou a esperança de retomá-lo no futuro, quando os problemas forem resolvidos.",
             youtubeVideoId: null
         },
         {
             id: 'q29',
-            topic: 'present perfect',
-            question: "Listen to <strong>Speaker #1</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #1</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt29a', text: "Yes, I love rock concerts!" },
-                { id: 'opt29b', text: "I have a few friends who play instruments." },
-                { id: 'opt29c', text: "I usually stay at home during the weekends." },
-                { id: 'opt29d', text: "Last year, I bought a new guitar." }
+                { id: 'opt29a', text: "Davvero?! Te lo avevo detto che ti sarebbe piaciuto!" },
+                { id: 'opt29b', text: "Sì, la storia romana è sempre stata una materia interessante a scuola." },
+                { id: 'opt29c', text: "Anch'io devo ancora comprare qualcosa da leggere questo mese." },
+                { id: 'opt29d', text: "Beh, i romanzi storici di solito sono molto lunghi, no?" }
             ],
             correctAnswerId: 'opt29a',
-            explanation: "A resposta mais natural à pergunta 'Have you ever been to a music festival?' é comentar que adora shows de rock.",
+            explanation: "A resposta do segundo interlocutor apresenta tom de entusiasmo, demonstrando sincronia com o entusiasmo da pessoa no áudio e interesse genuíno pelo que ela acabou de dizer.",
             videoSrc: 'q29.mp4'
         },
         {
             id: 'q30',
-            topic: 'conversation',
-            question: "Listen to <strong>Speaker #2</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #2</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt30a', text: "I love drinking wine to relax after I get home." },
-                { id: 'opt30b', text: "A cup of tea and soft music help me to sleep well." },
-                { id: 'opt30c', text: "My mom cooks dinner for me almost every night." },
-                { id: 'opt30d', text: "The boss at my company likes to hold meetings late at night." }
+                { id: 'opt30a', text: "Non mi piacciono i colloqui di lavoro." },
+                { id: 'opt30b', text: "Hai preparato le risposte alle domande del colloquio?" },
+                { id: 'opt30c', text: "Spero che tu ottenga il lavoro." },
+                { id: 'opt30d', text: "Figurati, andrà tutto bene." }
             ],
-            correctAnswerId: 'opt30a',
-            explanation: "A resposta relata o que é feito para relaxar depois de um longo dia de trabalho e não o que é feito para dormir melhor.",
+            correctAnswerId: 'opt30d',
+            explanation: "A intenção do segundo interlocutor é de se sensibilizar pela preocupação do amigo e tentar tranquilizá-lo sobre a entrevista.",
             videoSrc: 'q30.mp4'
         },
         {
             id: 'q31',
-            topic: 'conversation',
-            question: "Listen to <strong>Speaker #3</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #3</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt31a', text: "I never attend classes because I learn better alone." },
-                { id: 'opt31b', text: "I like to drink some tea and sleep early every day." },
-                { id: 'opt31c', text: "I create a study schedule and review my notes regularly." },
-                { id: 'opt31d', text: "I enjoy playing sports after exams to help me release my stress." }
+                { id: 'opt31a', text: "Anch'io preferisco evitare il traffico uscendo prima la mattina." },
+                { id: 'opt31b', text: "Potresti mandargli un messaggio di scuse e proporre un nuovo incontro al più presto." },
+                { id: 'opt31c', text: "Il traffico è sempre così in questa città, non c'è niente da fare." },
+                { id: 'opt31d', text: "La prossima volta prendi la metropolitana, è molto più veloce." }
             ],
-            correctAnswerId: 'opt31c',
-            explanation: "A resposta descreve diretamente uma estratégia de estudo organizada.",
+            correctAnswerId: 'opt31b',
+            explanation: "A reação do interlocutor foi sugerir uma possível solução para o problema; ou seja, ele não foca apenas na questão do trânsito e não ignora a preocupação central do colega em talvez ter perdido um cliente.",
             videoSrc: 'q31.mp4'
         },
         {
             id: 'q32',
-            topic: 'conversation',
-            question: "Listen to <strong>Speaker #4</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #4</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt32a', text: "That's great! You must be an expert at playing songs now." },
-                { id: 'opt32b', text: "Maybe you're just not cut out for music." },
-                { id: 'opt32c', text: "I hope you're not dedicating too much time to it." },
-                { id: 'opt32d', text: "You need to practice your cooking skills more." }
+                { id: 'opt32a', text: "Lo so. La cucina giapponese è molto popolare in tutto il mondo." },
+                { id: 'opt32b', text: "Dai, la prima volta capita a tutti! La prossima volta ti viene sicuramente meglio." },
+                { id: 'opt32c', text: "È comprensibile. Anch'io preferisco ordinare da fuori quando sono stanco." },
+                { id: 'opt32d', text: "Forse dovresti comprare degli utensili da cucina migliori la prossima volta." }
             ],
             correctAnswerId: 'opt32b',
-            explanation: "A resposta 'Maybe you're just not cut out for music.' sugere que talvez o interlocutor deva parar de tentar aprender violão e se dedicar a outro hobby, visto que ainda não consegue tocar nenhuma música.",
+            explanation: "A interlocutora está relatando uma experiência frustrante na cozinha, com um tom autodepreciativo. A reação do outro interlocutor, que acolhe essa frustração de forma empática e encorajadora, sem desviar do assunto, é a frase 'Dai, la prima volta capita a tutti! La prossima volta ti viene sicuramente meglio.'",
             videoSrc: 'q32.mp4'
         },
         {
             id: 'q33',
-            topic: 'conversation',
-            question: "Listen to <strong>Speaker #5</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #5</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt33a', text: "I bought a new book to read." },
-                { id: 'opt33b', text: "I had meetings all day." },
-                { id: 'opt33c', text: "I'm thinking of planning a vacation soon." },
-                { id: 'opt33d', text: "I love going to the gym after work." }
+                { id: 'opt33a', text: "Che situazione difficile. Hai pensato di chiedergli un chiarimento direttamente?" },
+                { id: 'opt33b', text: "Anch'io a volte ho problemi con i colleghi sul posto di lavoro." },
+                { id: 'opt33c', text: "Forse il tuo collega era semplicemente più adatto al progetto." },
+                { id: 'opt33d', text: "L'università è un'esperienza importante." }
             ],
-            correctAnswerId: 'opt33b',
+            correctAnswerId: 'opt33a',
             explanation: "Responde diretamente à pergunta explicando por que está exausto: reuniões o dia inteiro.",
             videoSrc: 'q33.mp4'
         },
         {
             id: 'q34',
-            topic: 'conversation',
-            question: "Listen to <strong>Speaker #6</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #6</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt34a', text: "I'm not a fan of shopping for groceries." },
-                { id: 'opt34b', text: "Tell me all about it when you get home." },
-                { id: 'opt34c', text: "I have a dentist appointment next week." },
-                { id: 'opt34d', text: "I've been trying a new recipe lately." }
+                { id: 'opt34a', text: "Anche a me piace il caffè." },
+                { id: 'opt34b', text: "Dobbiamo andarci insieme un giorno." },
+                { id: 'opt34c', text: "Preferisco il tè durante la mattina." },
+                { id: 'opt34d', text: "Non bevo caffè molto spesso perché mi fa male." }
             ],
             correctAnswerId: 'opt34b',
-            explanation: "É a resposta que continua naturalmente a conversa, mostrando interesse no que aconteceu.",
+            explanation: "É uma resposta entusiástica que sugere uma ação futura em conjunto, demonstrando harmonia com o contexto e expressando interesse na descoberta do interlocutor.",
             videoSrc: 'q34.mp4'
         },
         {
             id: 'q35',
-            topic: 'conversation',
-            question: "Listen to <strong>Speaker #7</strong> and choose the best option for what comes next in the conversation.",
+            topic: 'conversazione',
+            question: "Ascolta l'<strong>Interlocutore #7</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt35a', text: "I'm planning a road trip for next month." },
-                { id: 'opt35b', text: "I bought a new bicycle recently." },
-                { id: 'opt35c', text: "Congratulations! How was the test?" },
-                { id: 'opt35d', text: "I prefer using public transportation." }
+                { id: 'opt35a', text: "Non mi piacciono i viaggi avventurosi quando sono in vacanza." },
+                { id: 'opt35b', text: "Sai che non è molto divertente andare da solo in luoghi sconosciuti." },
+                { id: 'opt35c', text: "Che avventura! Hai già pianificato l'itinerario?" },
+                { id: 'opt35d', text: "È un continente molto grande da conoscere solo in alcune settimane." }
             ],
             correctAnswerId: 'opt35c',
-            explanation: "É a resposta mais natural: parabeniza e pergunta sobre o teste.",
+            explanation: "É uma resposta que está de acordo com o contexto da fala do interlocutor e expressa curiosidade sobre os planos de viagem, incentivando o interlocutor a compartilhar mais detalhes.",
             videoSrc: 'q35.mp4'
         },
         {
