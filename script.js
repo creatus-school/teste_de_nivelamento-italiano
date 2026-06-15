@@ -553,10 +553,10 @@ document.addEventListener('DOMContentLoaded', () => {
             topic: 'conversazione',
             question: "Ascolta l'<strong>Interlocutore #5</strong> e scegli l'opzione migliore per ciò che segue nella conversazione.",
             options: [
-                { id: 'opt33a', text: "Che situazione difficile. Hai pensato di chiedergli un chiarimento direttamente?" },
-                { id: 'opt33b', text: "Anch'io a volte ho problemi con i colleghi sul posto di lavoro." },
-                { id: 'opt33c', text: "Forse il tuo collega era semplicemente più adatto al progetto." },
-                { id: 'opt33d', text: "L'università è un'esperienza importante." }
+                { id: 'opt33a', text: "Che situazione difficile. Hai pensato di chiedergli un chiarimento su questo?" },
+                { id: 'opt33b', text: "Anch'io a volte ho problemi senza motivi con i colleghi sul posto di lavoro." },
+                { id: 'opt33c', text: "Forse il tuo collega non sapeva che questo progetto era tuo." },
+                { id: 'opt33d', text: "L'università è un'esperienza importante che ci aiuta ad imparare le cose nuove." }
             ],
             correctAnswerId: 'opt33a',
             explanation: "Responde diretamente à pergunta explicando por que está exausto: reuniões o dia inteiro.",
