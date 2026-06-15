@@ -263,41 +263,41 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'q12',
-            topic: 'used_to',
-            question: "<strong>A:</strong> Did you play any instrument when you were younger?<br><strong>B:</strong> Yes, I __________ play the piano regularly.",
+            topic: `periodo ipotetico dell'irrealtà`,
+            question: "Se _________ più soldi, comprerei una casa più grande.",
             options: [
-                { id: 'opt12a', text: "am used to" },
-                { id: 'opt12b', text: "use to" },
-                { id: 'opt12c', text: "using to" },
-                { id: 'opt12d', text: "used to" }
+                { id: 'opt12a', text: "avessi" },
+                { id: 'opt12b', text: "ho" },
+                { id: 'opt12c', text: "avrò" },
+                { id: 'opt12d', text: "avrei" }
             ],
-            correctAnswerId: 'opt12d',
+            correctAnswerId: 'opt12a',
             explanation: "'Used to' é usado para hábitos ou estados passados que não são mais colocados em prática.",
             youtubeVideoId: null
         },
         {
             id: 'q13',
-            topic: 'time',
-            question: "<strong>A:</strong> What time is the meeting today?<br><strong>B:</strong> __________.",
+            topic: 'congiuntivo',
+            question: "<strong>A:</strong> Cosa pensi del nuovo ristorante in centro?<br><strong>B:</strong> _________________.",
             options: [
-                { id: 'opt13a', text: "Sometimes in the morning" },
-                { id: 'opt13b', text: "It's only at 3 p.m." },
-                { id: 'opt13c', text: "Sorry, I did that" },
-                { id: 'opt13d', text: "It's the same place" }
+                { id: 'opt13a', text: "Penso che sarà molto buono." },
+                { id: 'opt13b', text: "Penso che è molto buono." },
+                { id: 'opt13c', text: "Penso che è stato molto buono." },
+                { id: 'opt13d', text: "Penso che sia molto buono." }
             ],
-            correctAnswerId: 'opt13b',
-            explanation: "A resposta 'It's only at 3 p.m.' é a única que responde diretamente à pergunta sobre o horário da reunião.",
+            correctAnswerId: 'opt13d',
+            explanation: "Verbos de opinião e crença como 'credere' exigem o subjuntivo presente na oração subordinada.",
             youtubeVideoId: null
         },
         {
             id: 'q14',
             topic: 'compound preposition / directions',
-            question: "<strong>A:</strong> Where should I put the package?<br><strong>B:</strong> __________.",
+            question: "È importante che tu ____________ la verità.",
             options: [
-                { id: 'opt14a', text: "I like the blue one" },
-                { id: 'opt14b', text: "Next to the door" },
-                { id: 'opt14c', text: "Because it's heavy" },
-                { id: 'opt14d', text: "Here. Help me" }
+                { id: 'opt14a', text: "dici" },
+                { id: 'opt14b', text: "dica" },
+                { id: 'opt14c', text: "dirai" },
+                { id: 'opt14d', text: "dicessi" }
             ],
             correctAnswerId: 'opt14b',
             explanation: "'Next to the door' indica o local onde o pacote deve ser colocado.",
@@ -306,26 +306,26 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'q15',
             topic: 'superlatives',
-            question: "Could you recommend a good movie for me to watch this weekend?",
+            question: "Nonostante ___________ piovendo, siamo usciti a fare una passeggiata.",
             options: [
-                { id: 'opt15a', text: "'Inception' is the most exciting movie ever!" },
-                { id: 'opt15b', text: "'Inception' is more excitingest movie ever!" },
-                { id: 'opt15c', text: "'Inception' is the more exciting movie ever!" },
-                { id: 'opt15d', text: "'Inception' is more exciting movie ever!" }
+                { id: 'opt15a', text: "è" },
+                { id: 'opt15b', text: "fosse" },
+                { id: 'opt15c', text: "stia" },
+                { id: 'opt15d', text: "sia" }
             ],
-            correctAnswerId: 'opt15a',
+            correctAnswerId: 'opt15c',
             explanation: "Para superlativos com adjetivos longos, usa-se 'the most + adjective'.",
             youtubeVideoId: null
         },
         {
             id: 'q16',
             topic: 'conditionals',
-            question: "Why are you bringing an umbrella in a sunny day?",
+            question: "Se ___________ studiato di più, avresti superato l'esame. ",
             options: [
-                { id: 'opt16a', text: "Sunny days make me happy." },
-                { id: 'opt16b', text: "Only because it's sunny." },
-                { id: 'opt16c', text: "Weather forecasts are usually accurate." },
-                { id: 'opt16d', text: "If it rained, I would need the umbrella." }
+                { id: 'opt16a', text: "avrai" },
+                { id: 'opt16b', text: "avresti." },
+                { id: 'opt16c', text: "hai" },
+                { id: 'opt16d', text: "avessi" }
             ],
             correctAnswerId: 'opt16d',
             explanation: "A resposta usa um condicional para explicar a precaução em um dia ensolarado.",
@@ -334,54 +334,54 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'q17',
             topic: 'future continuous',
-            question: "What will you be doing next Friday?",
+            question: "Mi ha chiesto ___________ fossi andato.",
             options: [
-                { id: 'opt17a', text: "My boyfriend never goes to my house this day." },
-                { id: 'opt17b', text: "I will be studying for my exams." },
-                { id: 'opt17c', text: "My mom likes to go to parks." },
-                { id: 'opt17d', text: "I will play tennis every day." }
+                { id: 'opt17a', text: "dove" },
+                { id: 'opt17b', text: "che" },
+                { id: 'opt17c', text: "se" },
+                { id: 'opt17d', text: "quando" }
             ],
-            correctAnswerId: 'opt17b',
+            correctAnswerId: 'opt17c',
             explanation: "A pergunta está no Future Continuous, e a resposta correta também usa essa estrutura para descrever uma ação contínua no futuro.",
             youtubeVideoId: null
         },
         {
             id: 'q18',
             topic: 'third onditional',
-            question: "Why didn't you invest in that tech company a few years ago? Now it's one of the most important in the world.",
+            question: "È probabile che __________ domani.",
             options: [
-                { id: 'opt18a', text: "Had I been aware of it, I'll invest for sure." },
-                { id: 'opt18b', text: "If I had the knowledge, I invest earlier." },
-                { id: 'opt18c', text: "If I had known, I would have invested." },
-                { id: 'opt18d', text: "If I know about it, I will invest next time." }
+                { id: 'opt18a', text: "piove" },
+                { id: 'opt18b', text: "piova" },
+                { id: 'opt18c', text: "pioverà" },
+                { id: 'opt18d', text: "piovesse" }
             ],
-            correctAnswerId: 'opt18c',
+            correctAnswerId: 'opt18b',
             explanation: "A frase usa o Third Conditional para expressar um arrependimento sobre uma situação passada hipotética.",
             youtubeVideoId: null
         },
         {
             id: 'q19',
             topic: 'question tags',
-            question: "I don't know what to wear to the party.",
+            question: "Non c'è nessuno __________ possa aiutarmi.",
             options: [
-                { id: 'opt19a', text: "Your friends always borrow you their clothes, don't they?" },
-                { id: 'opt19b', text: "We need to get there on time for her birthday, don't we?" },
-                { id: 'opt19c', text: "You'd better decide quickly. We don't want to be late, do we?" },
-                { id: 'opt19d', text: "You could've asked your parents to pick you up earlier, couldn't you?" }
+                { id: 'opt19a', text: "che" },
+                { id: 'opt19b', text: "il quale" },
+                { id: 'opt19c', text: "cui" },
+                { id: 'opt19d', text: "chi" }
             ],
-            correctAnswerId: 'opt19c',
+            correctAnswerId: 'opt19a',
             explanation: "A resposta oferece um conselho e usa uma question tag apropriada para a situação.",
             youtubeVideoId: null
         },
         {
             id: 'q20',
             topic: 'advice / modal verbs',
-            question: "I couldn't make it to the meeting because I needed to fix my car.",
+            question: "Vorrei che tu __________ più attento.",
             options: [
-                { id: 'opt20a', text: "I can't help you with that, because I was traveling." },
-                { id: 'opt20b', text: "You can ask for help if you needed." },
-                { id: 'opt20c', text: "In the past, public transportation are able to be a good option." },
-                { id: 'opt20d', text: "We could find someone to fix it for you next time." }
+                { id: 'opt20a', text: "eri" },
+                { id: 'opt20b', text: "sei" },
+                { id: 'opt20c', text: "sarai" },
+                { id: 'opt20d', text: "fossi" }
             ],
             correctAnswerId: 'opt20d',
             explanation: "A resposta oferece uma possível solução para uma situação futura similar.",
